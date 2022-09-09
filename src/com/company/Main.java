@@ -39,7 +39,8 @@ Scanner userInput = new Scanner(System.in);
 
                 return;
         }
-//        System.out.println(num1 +  " " + operator + " " + num2 + " = " + result);
-        System.out.println(num1 + operator + num2 + " = " + result);
+        System.out.println(num1 +  " " + operator + " " + num2 + " = " + result);
+//        System.out.println(num1 + operator + num2 + " = " + result);
+//        ASCII
     }
 }
