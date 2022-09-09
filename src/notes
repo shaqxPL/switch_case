@@ -1,0 +1,15 @@
+switch case - używamy gdy mamy wiele opcji (wyborów) i możemy potrzebować wykonać inne zadanie dla każdego z wyborów.
+
+składnia(syntax):
+switch (variable or an integer expression)
+{
+     case constant:
+     //Java code
+     ;
+     case constant:
+     //Java code
+     ;
+     default:
+     //Java code
+     ;
+}
