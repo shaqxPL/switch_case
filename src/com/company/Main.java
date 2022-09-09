@@ -1,56 +1,45 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 //	int num = 1;
-//    switch (num){
-//        case 1:
-//            System.out.println("case 1: value is:" + num);
-//
-//        case 2:
-//            System.out.println("case 2: value is:" + num);
-//
-//        case 3:
-//            System.out.println("case 3: value is:" + num);
-//
-//        default:
-//            System.out.println("default: value is:" + num);
-//    }
-        int day = 1;
-        switch (day) {
-            case 1:
-                System.out.println("Monday");
+        double num1;
+        double num2;
+Scanner userInput = new Scanner(System.in);
+
+        System.out.println("Enter first number: ");
+        num1 = userInput.nextDouble();
+        System.out.println("Enter second number: ");
+        num2 = userInput.nextDouble();
+        System.out.println("Enter an operator (+, -, *, /): ");
+        char operator = userInput.next().charAt(0);
+// w ten sposób obsługujemy znaki z inputu użytkowanika, 0 oznacza to że zostanie użyty tylko 1
+
+        double result;
+
+        switch (operator){
+
+            case '+':
+                result = num1 + num2;
                 break;
-            case 2:
-                System.out.println("Tuesday");
+            case '-':
+                result = num1 - num2;
                 break;
-            case 3:
-                System.out.println("Wednesday");
+            case '*':
+                result = num1 * num2;
                 break;
-            case 4:
-                System.out.println("Thursday");
+            case '/':
+                result = num1 / num2;
                 break;
-            case 5:
-                System.out.println("Friday");
-                break;
-            case 6:
-                System.out.println("Saturday");
-                break;
-            case 7:
-                System.out.println("Sunday");
-                break;
+            default:
+                System.out.println("Wrong operator");
+
+                return;
         }
-
-//        System.out.println("Enter the 4 numbers password");
-//        int password = 1234;
-//        switch (password) {
-//            case 1234:
-//                System.out.println("good password");
-//                break;
-//            default:
-//                System.out.println("wrong password");
-//        }
-
+//        System.out.println(num1 +  " " + operator + " " + num2 + " = " + result);
+        System.out.println(num1 + operator + num2 + " = " + result);
     }
 }
